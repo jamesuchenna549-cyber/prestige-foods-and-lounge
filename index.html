@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login and Register Page</title>
+  <link rel="stylesheet" href="../style/01-homePageStyle.css">
+  <link rel="stylesheet" href="../style/02-cart-page-style.css">
+  <link rel="stylesheet" href="../style/03-checkout-page.css">
+  <link rel="stylesheet" href="../style/04-user-page-style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+</head>
+
+
+<body>
+  <div class="general-container">
+    
+    <div class="ab">
+  <div id="general-navigation-container">
+    <div class="navigation-container">
+      
+      
+    
+   
+      
+      
+    </div><!-- navigation-container close-->
+    
+    
+<div class="login-register-button">
+  
+
+ <div class="navigation-container">
+      
+      <div class="button-container"> 
+        <button 
+        class="login button"
+        data-category="login"
+        >Login</button>
+      </div>
+      
+        
+      <div class="button-container"> 
+        <button 
+        class="register button"
+        data-category="register"
+        >Register</button>
+      </div>
+      
+      </div>
+      
+    
+    </div><!-- navigation-container close-->
+    
+    
+</div><!--general-navigation-container div close -->
+
+  
+    
+  
+  
+ </div><!-- ab -->
+  
+  
+     
+      <section class="checkout-form-container">
+ <div class="login category">
+   
+    
+
+<form id="checkout-form" action="../backend/login.php" method="POST">
+
+    
+
+
+      
+   <div>
+ <h2 id="registration-message"></h2>
+
+
+
+<h2 class="log-text">
+    Please Login To Your Account
+</h2>
+   
+  </div>
+ 
+ 
+ 
+    <div class="form-group">
+    
+      <input
+        type="email"
+        id="user-email"
+        name="email"
+        placeholder="Enter your Email"
+        required
+      >
+    </div>
+
+    <div class="form-group">
+
+      <input
+        type="Password"
+        id="user-password"
+        name="password"
+        placeholder="Enter your Password"
+        required
+      >
+    </div>
+
+ 
+       <div class="forgotten-password-text">
+    <a href="forgot_password.html">
+        Forgotten Password?
+    </a>
+</div>
+
+    
+    <h2 class="message login-message"></h2>
+  
+ <div class="checkout">
+    <button 
+    class="continue-btn"
+    type="submit">
+        Login 
+    </button>
+    
+  </div>
+  
+  <div class="register-text">
+    Don't Have An Account? <span><a href="#">Register</a></span>
+  </div>
+  
+   </form><!-- form -->
+
+
+
+
+
+  
+ </div><!-- login div end -->
+ 
+ 
+ 
+ 
+ 
+ 
+ <div class=" register category">
+   
+  <form id="checkout-form" action="../backend/register.php" method="POST">
+
+
+ <div>
+    <h2>
+      Enter Your Registration Details 
+ </h2>
+   
+  </div>
+ 
+ 
+ 
+    <div class="form-group">
+     
+      <input
+        type="email"
+        id="user-email"
+        name="email"
+        placeholder="Enter your Email"
+        required
+      >
+    </div>
+
+    <div class="form-group">
+    
+      <input
+        type="Password"
+        id="user-password"
+        name="password"
+        placeholder="Enter your Password"
+        required
+      >
+    </div>
+
+ 
+       
+
+   
+ 
+  <p class="message"></p>
+  
+ <div class="checkout">
+    <button 
+    class="continue-btn"
+    type="submit">
+        Register 
+    </button>
+    
+  </div>
+  
+  <div class="register-text">
+    Already Have An Account? <span><a href="#">Login</a></span>
+  </div>
+  
+   </form>
+  
+  
+  
+  </div><!--register closing div  -->
+  
+  
+</section><!-- checkout product container-->
+
+   
+      
+      
+    
+
+
+
+    
+
+  
+
+
+
+    
+  
+  </div><!-- general  container closing div-->
+  
+    <script type ="module" src="../js/12-login-page.js"></script>
+  
+  
+</body>
+
+</html>

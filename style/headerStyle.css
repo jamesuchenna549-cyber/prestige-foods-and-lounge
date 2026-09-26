@@ -1,0 +1,383 @@
+/* =========================================
+   PRESTIGE SHOP HEADER
+========================================= */
+
+.shop-header {
+    background:
+        linear-gradient(
+            135deg,
+            #1d353a,
+            #263f43,
+            #182b2f
+        );
+
+    color: #fff;
+    padding: 12px 8px 8px;
+}
+
+
+/* =========================================
+   TOP SECTION
+========================================= */
+
+.shop-top {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+justify-content:space-between;
+}
+
+
+/* =========================================
+   BRAND
+========================================= */
+
+.shop-brand {
+    flex-shrink: 0;
+    text-align: left;
+}
+
+.shop-brand h1 {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+
+.shop-brand p {
+    margin-top: 2px;
+    color: #F7931E;
+    font-size: 7px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+
+/* =========================================
+   SEARCH + CART
+========================================= */
+.shop-actions {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-left: auto;
+    flex-shrink: 0;
+}
+.shop-actions form {
+    flex: 1;
+}
+
+#search-icon {
+    position: relative;
+    width: 100%;
+}
+
+#search-input {
+    width: 100%;
+    height: 34px;
+    padding: 7px 35px 7px 11px;
+
+    border: none;
+    border-radius: 18px;
+
+    background-color: #fff;
+    color: #1d353a;
+
+    font-size: 11px;
+}
+
+#search-input::placeholder {
+    color: #999;
+}
+
+#search-input:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(247,147,30,0.35);
+}
+
+
+/* =========================================
+   SEARCH ICON
+========================================= */
+
+.search-icon-container {
+    width: 27px;
+    height: 27px;
+
+    position: absolute;
+    top: 3px;
+    right: 3px;
+
+    padding: 4px;
+}
+
+.search-icon-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+
+/* =========================================
+   CART
+========================================= */
+
+.shop-actions .cart-icon-container {
+    width: 35px;
+    height: 35px;
+
+    position: relative;
+
+    margin: 0;
+    padding: 5px;
+
+    border: none;
+    border-radius: 9px;
+
+    background-color: #fff;
+
+    flex-shrink: 0;
+}
+
+.shop-actions .cart-icon-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.shop-actions .cart-quantity-icon {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+
+    min-width: 17px;
+    height: 17px;
+
+    padding: 2px 4px;
+
+    border-radius: 10px;
+
+    background-color: #F7931E;
+    color: #fff;
+
+    font-size: 9px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+/* =========================================
+   MAIN NAVIGATION
+========================================= */
+
+.shop-navigation {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    gap: 3px;
+
+    margin-top: 8px;
+    padding-top: 7px;
+
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+.shop-navigation a {
+    flex: 1;
+
+    padding: 5px 2px;
+
+    border-radius: 6px;
+
+    color: #d9dddd;
+
+    text-decoration: none;
+
+    text-align: center;
+
+    font-size: 10px;
+    font-weight: 800;
+
+    transition: 0.3s ease;
+}
+
+.shop-navigation a:hover {
+    color: #F7931E;
+    background-color: rgba(255,255,255,0.06);
+}
+
+
+/* =========================================
+   SHOP TITLE
+========================================= */
+
+.shop-title {
+    padding: 10px 8px 5px;
+    background-color: #fffaf3;
+}
+
+.shop-title h2 {
+    margin: 0;
+
+    color: #1d353a;
+
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.shop-title p {
+    margin-top: 3px;
+
+    color: #767c8e;
+
+    font-size: 10px;
+}
+
+
+/* =========================================
+   CATEGORY NAVIGATION
+========================================= */
+
+#navigation-menus {
+    display: flex;
+    gap: 5px;
+
+    overflow-x: auto;
+
+    padding: 5px;
+
+    background-color: #fffaf3;
+}
+
+#navigation-menus::-webkit-scrollbar {
+    display: none;
+}
+
+#navigation-menus .menu {
+    flex: 1;
+    min-width: 60px;
+}
+
+#navigation-menus .menu button {
+    width: 100%;
+
+    border: none;
+    border-radius: 6px;
+
+    padding: 7px 5px;
+
+    background-color: #fff;
+
+    color: #767c8e;
+
+    font-size: 11px;
+    font-weight: 800;
+
+    box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+#navigation-menus .menu button:hover {
+    color: #fff;
+    background-color: #F7931E;
+}
+
+#navigation-menus .selected button {
+    color: #fff;
+    background-color: #F7931E;
+
+    box-shadow:
+        0 0 8px rgba(247,147,30,0.35);
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (min-width: 700px) {
+
+    .shop-header {
+        padding: 15px 25px 10px;
+    }
+
+    .shop-brand h1 {
+        font-size: 27px;
+    }
+
+    .shop-brand p {
+        font-size: 9px;
+        letter-spacing: 2px;
+    }
+
+    #search-input {
+        height: 38px;
+        font-size: 13px;
+    }
+
+    .shop-actions {
+        max-width: 600px;
+    }
+
+    .shop-navigation {
+        margin-top: 10px;
+    }
+
+    .shop-navigation a {
+        font-size: 13px;
+        padding: 7px;
+    }
+
+    .shop-title {
+        padding: 15px 20px 7px;
+    }
+
+    .shop-title h2 {
+        font-size: 22px;
+    }
+}
+
+
+/* =========================================
+   DESKTOP
+========================================= */
+
+@media (min-width: 1000px) {
+
+    .shop-header {
+        padding: 18px 50px 12px;
+    }
+
+    .shop-brand h1 {
+        font-size: 32px;
+    }
+
+    .shop-brand p {
+        font-size: 10px;
+        letter-spacing: 3px;
+    }
+
+    .shop-actions {
+        max-width: 700px;
+    }
+
+    .shop-navigation a {
+        font-size: 14px;
+    }
+
+    .shop-title {
+        padding: 20px 50px 10px;
+    }
+
+    .shop-title h2 {
+        font-size: 26px;
+    }
+}

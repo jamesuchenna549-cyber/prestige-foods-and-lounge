@@ -1,0 +1,424 @@
+/* =========================================
+   DE PRESTIGE LOGIN / REGISTER PAGE
+========================================= */
+
+.checkout-form-container {
+    width: 100%;
+    min-height: calc(100vh - 100px);
+    padding: 32px 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background:
+        radial-gradient(circle at top left, #fff0dc 0, transparent 35%),
+        radial-gradient(circle at bottom right, #ffe6c7 0, transparent 35%),
+        #fffaf3;
+}
+
+
+/* =========================================
+   LOGIN / REGISTER CARD
+========================================= */
+
+.category {
+    display: none;
+
+    width: 100%;
+    max-width: 440px;
+
+    padding: 32px 24px;
+
+    background: #fff;
+    border-radius: 18px;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.08),
+        0 2px 8px rgba(247, 147, 30, 0.08);
+
+    border: 1px solid rgba(247, 147, 30, 0.12);
+}
+
+
+/* =========================================
+   FORM
+========================================= */
+
+.category form {
+    width: 100%;
+}
+
+
+/* =========================================
+   FORM HEADING
+========================================= */
+
+.category h2 {
+    margin-bottom: 24px;
+
+    color: #1d353a;
+    font-size: 22px;
+    line-height: 1.3;
+    font-weight: 800;
+    text-align: center;
+}
+
+.category .log-text {
+    margin-bottom: 20px;
+}
+
+
+/* =========================================
+   FORM GROUP
+========================================= */
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+
+/* =========================================
+   INPUTS
+========================================= */
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 14px 16px;
+
+    border: 1px solid #ddd;
+    border-radius: 10px;
+
+    background-color: #fffaf3;
+    color: #1d353a;
+
+    font-size: 15px;
+    transition: 0.3s ease;
+}
+
+.form-group input::placeholder {
+    color: #999;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #F7931E;
+    background-color: #fff;
+    box-shadow: 0 0 0 3px rgba(247, 147, 30, 0.12);
+}
+
+
+/* =========================================
+   LABELS
+========================================= */
+
+.form-group label {
+    margin-bottom: 8px;
+    color: #767c8e;
+    font-weight: 900;
+}
+
+
+/* =========================================
+   FORGOTTEN PASSWORD
+========================================= */
+
+.forgotten-password-text {
+    text-align: right;
+    margin: -2px 0 12px;
+}
+
+.forgotten-password-text a {
+    display: inline-block;
+    color: #F7931E;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+text-decoration :none ;
+    transition: 0.3s ease;
+}
+
+.forgotten-password-text p:hover {
+    color: #d96f00;
+}
+
+
+/* =========================================
+   LOGIN / REGISTER SUBMIT BUTTON
+========================================= */
+
+.checkout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 16px;
+}
+
+.checkout .continue-btn {
+    width: 100%;
+    padding: 14px;
+    margin-top: 8px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: linear-gradient(135deg, #F7931E, #ffad4d);
+    color: #fff;
+
+    font-size: 16px;
+    font-weight: 800;
+    cursor: pointer;
+
+    box-shadow: 0 5px 12px rgba(247, 147, 30, 0.25);
+    transition: 0.3s ease;
+}
+
+.checkout .continue-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(247, 147, 30, 0.3);
+}
+
+.checkout .continue-btn:active {
+    transform: translateY(0);
+}
+
+
+/* =========================================
+   SWITCH LOGIN / REGISTER
+========================================= */
+
+.register-text {
+    text-align: center;
+    margin-top: 24px;
+
+    color: #767c8e;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.register-text span a {
+    display: inline-block;
+    margin-left: 4px;
+    padding: 2px 4px;
+
+    color: #F7931E;
+    font-size: 14px;
+    font-weight: 800;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.register-text span a:hover {
+    color: #d96f00;
+    text-decoration: underline;
+}
+
+
+/* =========================================
+   LOGIN / REGISTER TOP BUTTONS
+========================================= */
+
+.login-register-button {
+    width: 100%;
+}
+
+.login-register-button .navigation-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.button-container {
+    background-color: transparent;
+}
+
+.button-container button {
+    border: none;
+    border-radius: 20px;
+    background-color: transparent;
+
+    color: #767c8e;
+    font-weight: 800;
+    cursor: pointer;
+
+    padding: 10px 24px;
+    font-size: 13px;
+    transition: 0.3s ease;
+}
+
+.button-container button:hover {
+    background-color: #fff0dc;
+    color: #F7931E;
+}
+
+
+/* =========================================
+   ACTIVE LOGIN / REGISTER BUTTON
+========================================= */
+
+.button-color button {
+    background-color: #F7931E;
+    color: #fff;
+    box-shadow: 0 3px 8px rgba(247, 147, 30, 0.25);
+}
+
+
+/* =========================================
+   GENERAL MESSAGE
+========================================= */
+
+.message {
+    visibility: hidden;
+    opacity: 0;
+    text-align: center;
+    font-size: 12px;
+    color: #1d353a;
+    margin: 8px 0;
+    padding: 8px;
+    border-radius: 7px;
+}
+
+.show-message {
+    visibility: visible;
+    font-weight: bold;
+    animation: grow 0.4s ease-in-out forwards;
+}
+
+
+/* =========================================
+   LOGIN MESSAGE
+========================================= */
+
+.login-message {
+    text-align: center;
+    font-size: 12px;
+    margin: 8px 0;
+}
+
+
+/* =========================================
+   REGISTRATION MESSAGE
+========================================= */
+
+#registration-message {
+    text-align: center;
+    font-size: 13px;
+    margin-bottom: 12px;
+}
+
+
+/* =========================================
+   LOCATION
+========================================= */
+
+.location-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 24px;
+}
+
+
+/* =========================================
+   ANIMATION
+========================================= */
+
+@keyframes grow {
+    from {
+        transform: scale(0.95);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+    .checkout-form-container {
+        min-height: calc(100vh - 100px);
+        padding: 32px 16px 24px;
+        align-items: flex-start;
+    }
+
+    .category {
+        padding: 28px 20px;
+        border-radius: 16px;
+    }
+
+    .category h2 {
+        font-size: 20px;
+    }
+
+    .form-group {
+        margin-bottom: 16px;
+    }
+
+    .form-group input {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .checkout .continue-btn {
+        padding: 12px;
+        font-size: 15px;
+    }
+
+    .location-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (min-width: 700px) {
+    .checkout-form-container {
+        min-height: calc(100vh - 120px);
+        padding: 40px 24px;
+    }
+
+    .category {
+        max-width: 460px;
+        padding: 36px 28px;
+    }
+
+    .category h2 {
+        font-size: 24px;
+    }
+}
+
+
+/* =========================================
+   DESKTOP
+========================================= */
+
+@media (min-width: 1000px) {
+    .checkout-form-container {
+        min-height: calc(100vh - 120px);
+    }
+
+    .category {
+        max-width: 480px;
+        padding: 40px 32px;
+        border-radius: 20px;
+    }
+
+    .category h2 {
+        font-size: 25px;
+    }
+}

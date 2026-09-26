@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Page</title>
+
+  <link rel="stylesheet" href="../style/01-homePageStyle.css">
+  <link rel="stylesheet" href="../style/headerStyle.css">
+</head>
+
+<body>
+  <div class="general-container">
+
+    <!-- =========================
+         SHOP HEADER
+    ========================== -->
+    <div class="ab">
+      <div class="shop-header">
+
+        <!-- TOP ROW -->
+        <div class="shop-top">
+
+          <!-- BRAND -->
+          <div class="shop-brand">
+            <h1>Prestige</h1>
+            <p>Foods &amp; Lounge</p>
+          </div>
+
+          <!-- SEARCH + CART -->
+          <div class="shop-actions">
+            <form action="" method="GET">
+              <div id="search-icon">
+                <input
+                  type="text"
+                  id="search-input"
+                  name="search"
+                  placeholder="Search our menu..."
+                >
+                <div class="search-icon-container">
+                  <a href="#" id="search-button">
+                    <img
+                      src="../image/02-search-icon.jpg"
+                      alt="Search"
+                    >
+                  </a>
+                </div>
+              </div>
+            </form>
+
+            <!-- CART -->
+            <div class="cart-icon-container">
+              <a href="02-cart-page.html">
+                <img
+                  src="../image/01-shopping-cart-icon.png"
+                  alt="Shopping cart"
+                >
+              </a>
+              <p class="cart-quantity-icon"></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- MAIN NAVIGATION -->
+        <div class="shop-navigation">
+          <a href="05-homePage.php">Home</a>
+          <a href="#">About</a>
+          <a href="01-shop.html">Menu</a>
+          <a href="my_orders.html">My Orders</a>
+        </div>
+      </div>
+
+      <!-- =========================
+           SHOP TITLE
+      ========================== -->
+      <div class="shop-title">
+        <h2>Our Menu</h2>
+        <p>Choose something delicious.</p>
+      </div>
+
+      <!-- =========================
+           CATEGORY NAVIGATION
+      ========================== -->
+      <nav id="navigation-menus" class="navigation-container">
+        <div class="menu"><button data-category="all">All</button></div>
+        <div class="menu"><button data-category="snack-menu">Snacks</button></div>
+        <div class="menu"><button data-category="rice-menu">Rice</button></div>
+        <div class="menu">
+<button data-category="swallow-menu">
+Swallow
+</button></div>
+        <div class="menu"><button data-category="drink-menu">Drinks</button></div>
+      </nav>
+    </div>
+
+    <!-- =========================
+         PRODUCTS
+    ========================== -->
+    <div class="products-container">
+      <!-- PRODUCT ITEMS GO HERE -->
+    </div>
+  </div>
+
+  <!-- =========================
+       JAVASCRIPT
+  ========================== -->
+  <script type="module" src="js/04-productEngine.js"></script>
+</body>
+
+</html>

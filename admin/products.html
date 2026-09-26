@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Products</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+
+<body>
+
+    <div class="admin-layout">
+
+        <aside class="admin-sidebar">
+            <div class="admin-brand">
+                <h2>Prestige</h2>
+                <p>Restaurant</p>
+            </div>
+
+            <nav class="admin-nav">
+    <a href="dashboard.html">Dashboard</a>
+    <a href="products.html" class="active">Products</a>
+    <a href="orders.html">Orders</a>
+    <a href="customers.html">Customers</a>
+</nav>
+            <a href="#" class="logout-link">Logout</a>
+        </aside>
+
+        <main class="admin-main">
+
+            <div class="admin-header">
+                <div>
+                    <h1>Products</h1>
+                    <p>Manage your products</p>
+                </div>
+
+                <button class="add-product-button">+ Add Product</button>
+            </div>
+
+            <form class="add-product-form">
+                <h2 class="product-form-title">Add Product</h2>
+
+                <input type="text" name="name" placeholder="Product name">
+
+                <textarea name="description" placeholder="Product description"></textarea>
+
+                <input type="number" name="price" placeholder="Price">
+
+                <input type="text" name="category" placeholder="Category">
+
+                <input type="text" name="image" placeholder="Image path">
+
+                <button type="submit" class="product-form-button">
+                    Save Product
+                </button>
+
+                <p class="product-message"></p>
+            </form>
+
+            <div class="products-card">
+                <p class="products-message"></p>
+                <div class="products-container"></div>
+            </div>
+
+        </main>
+
+    </div>
+
+    <script src="products.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    color: #222;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.my-orders-header {
+    width: 92%;
+    margin: 25px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.my-orders-header h1 {
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+.my-orders-header p {
+    color: #666;
+    font-size: 14px;
+}
+
+.my-orders-header a {
+    width: fit-content;
+    padding: 10px 15px;
+    background: #222;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 7px;
+    font-size: 14px;
+}
+
+
+/* =========================
+   MAIN
+========================= */
+
+.my-orders-main {
+    width: 92%;
+    margin: 0 auto 40px;
+}
+
+
+/* =========================
+   ORDERS
+========================= */
+
+.orders-container {
+    display: grid;
+    gap: 15px;
+}
+
+.order-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+}
+
+.order-card h2 {
+    margin-bottom: 15px;
+    font-size: 19px;
+}
+
+.order-card p {
+    margin: 8px 0;
+    color: #555;
+}
+
+.order-card strong {
+    color: #222;
+}
+
+
+/* =========================
+   VIEW ORDER BUTTON
+========================= */
+
+.view-order {
+    margin-top: 15px;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 7px;
+    background: #222;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.view-order:hover {
+    opacity: 0.9;
+}
+
+
+/* =========================
+   MESSAGE
+========================= */
+
+.my-orders-message {
+    margin-bottom: 15px;
+    color: #555;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (min-width: 700px) {
+
+    .my-orders-header {
+        width: 90%;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .my-orders-main {
+        width: 90%;
+    }
+
+    .orders-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* =========================
+   DESKTOP
+========================= */
+
+@media (min-width: 1000px) {
+
+    .my-orders-header,
+    .my-orders-main {
+        width: 85%;
+        max-width: 1100px;
+    }
+
+    .orders-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}

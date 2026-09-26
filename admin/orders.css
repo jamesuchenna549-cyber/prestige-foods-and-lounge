@@ -1,0 +1,311 @@
+.orders-card {
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+}
+
+.orders-container {
+    display: grid;
+    gap: 18px;
+}
+
+.admin-order {
+    padding: 20px;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    background: #fff;
+}
+
+.admin-order h2 {
+    margin: 0 0 12px;
+    font-size: 18px;
+}
+
+.admin-order p {
+    margin: 7px 0;
+    color: #555;
+}
+
+
+/* ORDER STATUS */
+
+.order-status {
+    margin-top: 10px;
+    padding: 9px 12px;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    background: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.order-status:focus {
+    outline: none;
+    border-color: #222;
+}
+
+
+/* STATUS COLORS */
+
+.order-status.status-pending {
+    background: #fff3cd;
+    color: #856404;
+    border-color: #ffe69c;
+}
+
+.order-status.status-processing {
+    background: #cfe2ff;
+    color: #084298;
+    border-color: #9ec5fe;
+}
+
+.order-status.status-completed {
+    background: #d1e7dd;
+    color: #0f5132;
+    border-color: #a3cfbb;
+}
+
+.order-status.status-cancelled {
+    background: #f8d7da;
+    color: #842029;
+    border-color: #f1aeb5;
+}
+
+
+/* VIEW ORDER BUTTON */
+
+.view-order {
+    margin-top: 15px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 7px;
+    background: #222;
+    color: #fff;
+    cursor: pointer;
+}
+
+.view-order:hover {
+    opacity: 0.9;
+}
+
+
+/* ORDER DETAILS */
+
+.order-details-container {
+    margin-top: 25px;
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+}
+
+.order-details-container h2 {
+    margin-top: 0;
+}
+
+.order-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.order-item img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.order-item h3 {
+    margin: 0 0 7px;
+}
+
+.order-item p {
+    margin: 4px 0;
+    color: #555;
+}
+
+
+/* ERROR / MESSAGE */
+
+.orders-message {
+    display: none;
+}
+
+.orders-message.admin-show-message {
+    display: block;
+    margin-bottom: 15px;
+    padding: 12px 15px;
+    border-radius: 7px;
+    background: #f5f5f5;
+    color: #222;
+    font-size: 14px;
+}
+
+
+
+
+
+
+
+
+/* =========================
+   ORDER MODAL
+   ========================= */
+
+.order-modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+
+    background: rgba(0, 0, 0, 0.55);
+
+    padding: 15px;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.order-modal.show {
+    display: flex;
+}
+
+.order-modal-content {
+    position: relative;
+
+    width: 100%;
+    max-width: 650px;
+
+    max-height: 90vh;
+    overflow-y: auto;
+
+    background: #fff;
+
+    padding: 20px;
+
+    border-radius: 12px;
+
+    box-sizing: border-box;
+}
+
+.close-order-modal {
+    position: absolute;
+
+    top: 8px;
+    right: 12px;
+
+    border: none;
+    background: none;
+
+    font-size: 30px;
+    line-height: 1;
+
+    cursor: pointer;
+
+    color: #555;
+}
+
+.close-order-modal:hover {
+    color: #222;
+}
+
+.order-modal-body {
+    padding-top: 20px;
+}
+
+.order-modal-body > h2 {
+    margin: 0 0 20px;
+
+    font-size: 20px;
+}
+
+.order-modal .order-item {
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 15px 0;
+
+    border-bottom: 1px solid #eee;
+}
+
+.order-modal .order-item img {
+    width: 65px;
+    height: 65px;
+
+    object-fit: cover;
+
+    border-radius: 8px;
+}
+
+.order-modal .order-item h3 {
+    margin: 0 0 6px;
+
+    font-size: 16px;
+}
+
+.order-modal .order-item p {
+    margin: 4px 0;
+
+    color: #555;
+
+    font-size: 14px;
+}
+
+
+@media (min-width: 700px) {
+
+    .order-modal-content {
+        padding: 25px;
+    }
+
+    .order-modal-body > h2 {
+        font-size: 22px;
+    }
+
+}
+
+
+@media (min-width: 1000px) {
+
+    .order-modal-content {
+        max-width: 750px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+/* TABLET */
+
+@media (min-width: 700px) {
+
+    .orders-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* DESKTOP */
+
+@media (min-width: 1000px) {
+
+    .orders-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}

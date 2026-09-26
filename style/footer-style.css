@@ -1,0 +1,305 @@
+/* =========================================
+   PRESTIGE PREMIUM FOOTER
+========================================= */
+
+.prestige-footer {
+    margin-top: 40px;
+    background:
+        linear-gradient(
+            135deg,
+            #1d353a,
+            #263f43,
+            #182b2f
+        );
+    color: #fff;
+    padding: 35px 15px 20px;
+}
+
+
+/* =========================================
+   FOOTER CONTAINER
+========================================= */
+
+.prestige-footer .footer-section {
+    border: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 600px;
+    background: transparent;
+    box-shadow: none;
+    border-radius: 0;
+}
+
+
+/* =========================================
+   BRAND
+========================================= */
+
+.footer-brand {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.footer-brand h3 {
+    margin: 0;
+    font-size: 32px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+.footer-brand p {
+    margin-top: 3px;
+    color: #F7931E;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 4px;
+}
+
+.footer-tagline {
+    display: block;
+    margin-top: 12px;
+    color: #d9dddd;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+
+/* =========================================
+   EXPERIENCE
+========================================= */
+
+.prestige-footer .prestige-text {
+    margin: 20px 0;
+}
+
+.prestige-footer .prestige-text ol {
+    justify-content: center;
+    gap: 25px;
+    list-style: none;
+}
+
+.prestige-footer .prestige-text li {
+    color: #fff;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.prestige-footer .prestige-text li::before {
+    content: "•";
+    color: #F7931E;
+    margin-right: 8px;
+}
+
+
+/* =========================================
+   DESCRIPTION
+========================================= */
+
+.prestige-footer .description {
+    padding: 15px 10px;
+    text-align: center;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.prestige-footer .description p {
+    text-align: center;
+    color: #d9dddd;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   ORDER BUTTON
+========================================= */
+
+.footer-order {
+    text-align: center;
+    margin: 25px 0;
+}
+
+.footer-order a {
+    display: inline-block;
+    padding: 12px 22px;
+    border-radius: 25px;
+    background-color: #F7931E;
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 800;
+    box-shadow: 0 5px 15px rgba(247,147,30,0.25);
+    transition: 0.3s ease;
+}
+
+.footer-order a:hover {
+    background-color: #ffad4d;
+    transform: translateY(-2px);
+}
+
+
+/* =========================================
+   SERVICES + CONTACT
+========================================= */
+
+.prestige-footer .services {
+    padding: 15px 5px;
+}
+
+.prestige-footer .services h3 {
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.prestige-footer .services ul {
+    padding: 0;
+}
+
+.prestige-footer .services li {
+    margin-bottom: 8px;
+}
+
+.prestige-footer .services li a {
+    color: #cfd5d5;
+    font-size: 13px;
+    transition: 0.3s ease;
+}
+
+.prestige-footer .services li a:hover {
+    color: #F7931E;
+}
+
+.prestige-footer .services p {
+    color: #cfd5d5;
+    font-size: 13px;
+    line-height: 1.6;
+    margin-bottom: 8px;
+}
+
+
+/* =========================================
+   SOCIAL MEDIA
+========================================= */
+
+.prestige-footer .follow-us {
+    margin-top: 10px;
+    padding: 10px 5px;
+}
+
+.prestige-footer .follow-us h4 {
+    color: #fff;
+    font-size: 18px;
+    margin: 0 0 12px;
+}
+
+.prestige-footer .follow-card {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.08);
+    box-shadow: none;
+    padding: 9px;
+    margin-bottom: 8px;
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+
+.prestige-footer .follow-card:hover {
+    background: rgba(247,147,30,0.12);
+    border-color: rgba(247,147,30,0.35);
+}
+
+.prestige-footer .follow-card h3 {
+    color: #fff;
+    font-size: 14px;
+}
+
+
+/* =========================================
+   SOCIAL ICON
+========================================= */
+
+.prestige-footer .feature-icon {
+    width: 38px;
+    height: 38px;
+    background: rgba(255,255,255,0.08);
+}
+
+.prestige-footer .feature-icon img {
+    width: 23px;
+    height: 23px;
+}
+
+
+/* =========================================
+   COPYRIGHT
+========================================= */
+
+.prestige-footer .final-message {
+    margin-top: 25px;
+    padding-top: 18px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    text-align: center;
+}
+
+.prestige-footer .final-message p {
+    color: #9da8a8;
+    font-size: 11px;
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   DEPRESTIGE TEXT
+========================================= */
+
+.prestige-footer .deprestige-text {
+    color: #F7931E;
+    font-weight: 900;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (min-width: 700px) {
+
+    .prestige-footer {
+        padding: 50px 30px 25px;
+    }
+
+    .prestige-footer .footer-section {
+        max-width: 800px;
+    }
+
+    .footer-brand h3 {
+        font-size: 38px;
+    }
+
+    .prestige-footer .services {
+        padding: 20px 10px;
+    }
+
+}
+
+
+/* =========================================
+   DESKTOP
+========================================= */
+
+@media (min-width: 1000px) {
+
+    .prestige-footer {
+        padding: 60px 50px 25px;
+    }
+
+    .prestige-footer .footer-section {
+        max-width: 1100px;
+    }
+
+    .footer-brand h3 {
+        font-size: 44px;
+    }
+
+}

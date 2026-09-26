@@ -1,0 +1,21 @@
+# Local database configuration
+backend/db_connection.php
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+
+# Local secret configuration
+backend/config.php
+
+# Logs
+*.log
+
+# Backup files
+*.bak
+*.backup
+
+# Operating system files
+.DS_Store
+Thumbs.db
