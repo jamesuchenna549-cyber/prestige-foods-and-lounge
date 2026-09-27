@@ -5,6 +5,8 @@ session_start();
 require "db_connection.php";
 
 header("Content-Type: application/json");
+require "config.php";
+
 
 
 // =========================
