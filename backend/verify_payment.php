@@ -3,6 +3,7 @@
 session_start();
 
 require "db_connection.php";
+require "config.php";
 
 header("Content-Type: application/json");
 
@@ -99,11 +100,7 @@ if ($order["payment_status"] === "paid") {
 }
 
 
-// =========================
-// PAYSTACK SECRET KEY
-// =========================
 
-$secretKey = "require config.php";
 
 
 // =========================

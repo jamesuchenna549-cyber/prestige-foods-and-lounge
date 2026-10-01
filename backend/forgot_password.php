@@ -211,11 +211,6 @@ $resetLink =
     "http://0.0.0.0:8080/reset_password.html?token="
     . urlencode($token);
 
-
-// =========================
-// SEND RESET EMAIL
-// =========================
-
 // =========================
 // SEND RESET EMAIL
 // =========================

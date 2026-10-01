@@ -1,8 +1,3 @@
-
-//logic file 
-
-
-
 import {newCart} from './03-cart.js';
 import {
   productContainer,
@@ -15,32 +10,6 @@ import {cartContainer, renderCartUI} from './06-cartUI.js';
 import {checkoutContainer, updateCheckOutPage} from './08-check-out-page.js';
 
 
-/*
-
-function addToCart(productId){
- let product=currentProducts.find(function(item){
-    return item.id===Number(productId);
-  });
-
-let productInNewCart=newCart.find(function(product){
-    return product.id===Number(productId);
-  });
-  
-  if(productInNewCart){
-    productInNewCart.quantity++;
-  }else{
-    newCart.push({
-  id: product.id,
-  image: product.image,
-  name:product.name,
-description:product.description,
-  price: product.price,
-  quantity:1
-    });
-  }
-  updateUi();
-}
-*/
 
 function addToCart(productId){
 
@@ -191,21 +160,6 @@ updateUi();
 }
 
 
-
-
-
-
-
-/*function updateUi(){
-  localStorage.setItem('newCart',JSON.stringify(newCart));
-  updateCartQuantity();
-  
-  if(cartContainer){
-    renderCartUI();
-    getSubTotal();
-  }
-}
-*/
 export function updateUi() {
   localStorage.setItem('newCart', JSON.stringify(newCart));
 
@@ -260,24 +214,7 @@ let  total=(getSubTotal()+deliveryFee)-discount;
 return total;
 }
 
-/*
-export function persistColor(){
-  let selectedCategory=
-  document.querySelectorAll('.menu');
-  
-  
-  
-  selectedCategory.forEach(function(button){
-  
-  button.addEventListener('click', function(){
-    button.classList.add('selected');
-  })
-    
-  })
-  
-}
 
-*/
 
 
 

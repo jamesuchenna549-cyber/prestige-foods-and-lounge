@@ -41,10 +41,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
 echo "Registration successful.";
 
-
-
-   /* header("Location: ../inde.html?registered=success");
-*/
 exit;
 }
 ?>

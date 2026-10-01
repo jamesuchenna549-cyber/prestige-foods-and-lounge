@@ -98,12 +98,6 @@ if ($order["payment_status"] === "paid") {
 }
 
 
-// =========================
-// PAYSTACK TEST SECRET KEY
-// =========================
-
-
-$secretKey = "require config.php";
 
 
 // =========================
@@ -160,7 +154,7 @@ curl_setopt(
 // WORKAROUND
 // =========================
 
-// Your phone's PHP environment currently
+// My phone's PHP environment currently
 // cannot find its CA certificate.
 // These should NOT be used in production.
 
