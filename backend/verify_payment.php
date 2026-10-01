@@ -4,6 +4,7 @@ session_start();
 
 require "db_connection.php";
 require "config.php";
+require "error_handler.php";
 
 header("Content-Type: application/json");
 

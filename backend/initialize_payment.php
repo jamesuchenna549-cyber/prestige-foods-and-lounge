@@ -3,6 +3,8 @@
 session_start();
 
 require "db_connection.php";
+require "error_handler.php";
+
 
 header("Content-Type: application/json");
 require "config.php";

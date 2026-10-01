@@ -12,6 +12,7 @@ use PHPMailer\PHPMailer\Exception;
 
 session_start();
 require "config.php";
+require "error_handler.php";
 
 require "db_connection.php";
 
