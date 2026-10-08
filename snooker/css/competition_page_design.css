@@ -1,0 +1,213 @@
+/* ========================================
+   COMPETITION DETAILS PAGE
+======================================== */
+
+.competition-details-page {
+
+    width: 100%;
+
+    max-width: 1000px;
+
+    margin: 0 auto;
+
+    padding: 50px 20px 80px;
+
+}
+
+
+.competition-details-page h1 {
+
+    font-size: clamp(2.5rem, 6vw, 4rem);
+
+    line-height: 1.1;
+
+    color: #f5f1e8;
+
+    margin: 15px 0 20px;
+
+}
+
+
+.competition-description {
+
+    max-width: 750px;
+
+    color: #aaa;
+
+    font-size: 1.05rem;
+
+    margin-bottom: 45px;
+
+}
+
+
+/* ========================================
+   COMPETITION INFORMATION
+======================================== */
+
+.competition-details {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 18px;
+
+    margin-bottom: 45px;
+
+}
+
+
+.competition-details .detail-item {
+
+    background: #151a17;
+
+    border: 1px solid rgba(201, 164, 76, 0.25);
+
+    border-radius: 10px;
+
+    padding: 22px;
+
+    transition: 0.3s ease;
+
+}
+
+
+.competition-details .detail-item:hover {
+
+    border-color: rgba(201, 164, 76, 0.65);
+
+    transform: translateY(-3px);
+
+}
+
+
+.competition-details .detail-label {
+
+    display: block;
+
+    color: #888;
+
+    font-size: 0.75rem;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1.5px;
+
+    margin-bottom: 8px;
+
+}
+
+
+.competition-details .detail-value {
+
+    color: #f5f1e8;
+
+    font-size: 1.05rem;
+
+    font-weight: bold;
+
+}
+
+
+.competition-details .entry-fee {
+
+    color: #d4b15f;
+
+    font-size: 1.2rem;
+
+}
+
+
+/* ========================================
+   COMPETITION ACTION BUTTONS
+======================================== */
+
+.competition-actions {
+
+    display: flex;
+
+    gap: 15px;
+
+    flex-wrap: wrap;
+
+}
+
+
+.competition-actions a {
+
+    display: inline-block;
+
+    padding: 13px 22px;
+
+    background: #c9a44c;
+
+    color: #111;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    border-radius: 6px;
+
+    transition: 0.3s ease;
+
+}
+
+
+.competition-actions a:hover {
+
+    background: #e0c06a;
+
+    transform: translateY(-2px);
+
+}
+
+
+.competition-actions a:last-child {
+
+    background: transparent;
+
+    color: #c9a44c;
+
+    border: 1px solid #c9a44c;
+
+}
+
+
+.competition-actions a:last-child:hover {
+
+    background: #c9a44c;
+
+    color: #111;
+
+}
+
+
+/* ========================================
+   COMPETITION DETAILS RESPONSIVENESS
+======================================== */
+
+@media (max-width: 650px) {
+
+    .competition-details {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .competition-actions {
+
+        flex-direction: column;
+
+    }
+
+
+    .competition-actions a {
+
+        text-align: center;
+
+    }
+
+}

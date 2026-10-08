@@ -1,9 +1,9 @@
 <?php
-
+require "error_handler.php";
 session_start();
 
 require "db_connection.php";
-require "error_handler.php";
+
 
 header("Content-Type: application/json");
 

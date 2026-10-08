@@ -69,6 +69,11 @@ customersButton.addEventListener('click', function() {
     window.location.href = 'customers.html';
 });
 
+const snookerButton = document.querySelector('.snooker-button');
+
+snookerButton.addEventListener('click', function() {
+    window.location.href = 'snooker.html';
+});
 
 
 

@@ -1,0 +1,183 @@
+/* ========================================
+   ALL COMPETITIONS PAGE
+======================================== */
+
+.all-competitions-page {
+
+    width: 100%;
+
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    padding: 50px 20px 80px;
+
+}
+
+
+.all-competitions-page > h1 {
+
+    font-size: clamp(2.5rem, 6vw, 4rem);
+
+    line-height: 1.1;
+
+    color: #f5f1e8;
+
+    margin-bottom: 15px;
+
+}
+
+
+.all-competitions-page > p {
+
+    color: #aaa;
+
+    max-width: 700px;
+
+    margin-bottom: 45px;
+
+}
+
+
+/* ========================================
+   COMPETITION CARD
+======================================== */
+
+.competition-card {
+
+    background: #151a17;
+
+    border: 1px solid rgba(201, 164, 76, 0.25);
+
+    border-radius: 12px;
+
+    padding: 30px;
+
+    margin-bottom: 25px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+
+    transition: 0.3s ease;
+
+}
+
+
+.competition-card:hover {
+
+    border-color: rgba(201, 164, 76, 0.65);
+
+    transform: translateY(-3px);
+
+}
+
+
+.competition-card h2 {
+
+    color: #d4b15f;
+
+    font-size: 1.6rem;
+
+    margin-bottom: 12px;
+
+}
+
+
+.competition-card > p:first-of-type {
+
+    color: #aaa;
+
+    margin-bottom: 22px;
+
+}
+
+
+.competition-card p {
+
+    color: #c2c2c2;
+
+    margin-bottom: 8px;
+
+}
+
+
+.competition-card strong {
+
+    color: #f5f1e8;
+
+}
+
+
+/* ========================================
+   COMPETITION STATUS
+======================================== */
+
+.competition-card p:nth-of-type(6) {
+
+    text-transform: capitalize;
+
+}
+
+
+.competition-card a {
+
+    display: inline-block;
+
+    margin-top: 18px;
+
+    padding: 12px 22px;
+
+    background: #c9a44c;
+
+    color: #111;
+
+    border-radius: 6px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition: 0.3s ease;
+
+}
+
+
+.competition-card a:hover {
+
+    background: #e0c06a;
+
+    transform: translateY(-2px);
+
+}
+
+
+/* ========================================
+   EMPTY COMPETITIONS MESSAGE
+======================================== */
+
+.all-competitions-page > p:last-child {
+
+    color: #aaa;
+
+}
+
+
+/* ========================================
+   ALL COMPETITIONS MOBILE
+======================================== */
+
+@media (max-width: 600px) {
+
+    .all-competitions-page {
+
+        padding: 40px 20px 60px;
+
+    }
+
+
+    .competition-card {
+
+        padding: 24px 20px;
+
+    }
+
+}

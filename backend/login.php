@@ -1,7 +1,8 @@
 <?php
+require "error_handler.php";
 session_start();
 require "db_connection.php";
-require "error_handler.php";
+
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
 

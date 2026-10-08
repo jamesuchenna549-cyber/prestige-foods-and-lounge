@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Snooker Management</title>
+
+    <link
+        rel="stylesheet"
+        href="admin.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<div class="admin-layout">
+
+
+    <!-- =========================
+         ADMIN SIDEBAR
+    ========================== -->
+
+    <aside class="admin-sidebar">
+
+
+        <div class="admin-brand">
+
+            <h2>Prestige</h2>
+
+            <p>Restaurant & Lounge</p>
+
+        </div>
+
+
+        <nav class="admin-nav">
+
+
+            <a href="dashboard.html">
+                Dashboard
+            </a>
+
+
+            <a href="products.html">
+                Products
+            </a>
+
+
+            <a href="orders.html">
+                Orders
+            </a>
+
+
+            <a href="customers.html">
+                Customers
+            </a>
+
+
+            <a
+                href="snooker.html"
+                class="active"
+            >
+                Snooker
+            </a>
+
+
+        </nav>
+
+
+        <a
+            href="#"
+            class="logout-link"
+        >
+            Logout
+        </a>
+
+
+    </aside>
+
+
+
+    <!-- =========================
+         MAIN CONTENT
+    ========================== -->
+
+    <main class="admin-main">
+
+
+        <header class="admin-header">
+
+
+            <div>
+
+                <h1>
+                    Snooker Management
+                </h1>
+
+
+                <p>
+                    Manage competitions, registrations and champions.
+                </p>
+
+            </div>
+
+
+        </header>
+
+
+
+        <!-- =========================
+             MANAGEMENT OPTIONS
+        ========================== -->
+
+        <section class="dashboard-menu">
+
+
+        
+
+
+          <button
+    class="snooker-management-button"
+    onclick="window.location.href='admin_snooker_winners.php'"
+>
+
+    <span>
+        Winners & Champions
+    </span>
+
+    <small>
+        Manage competition winners and championship history
+    </small>
+
+</button>
+
+
+
+          <button
+    class="snooker-management-button"
+    onclick="window.location.href='snooker_events.php'"
+>
+
+    <span>
+        Competitions
+    </span>
+
+    <small>
+        Create and manage snooker events
+    </small>
+
+</button>
+
+
+        </section>
+
+
+    </main>
+
+
+</div>
+
+
+</body>
+
+</html>

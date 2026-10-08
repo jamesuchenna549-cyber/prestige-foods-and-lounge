@@ -167,9 +167,8 @@ session_start();
                       </div>
 
           <div class="text">
-            <a href="#">
-               <h3>Snooker Lounge</h3>
-            <p>Book A Snooker Session Now!</p>
+            <a href="./snooker/snooker.php">
+        <h3>Snooker Lounge</h3> <p>Register For A Competition Now!</p>
          
             </a>
            
@@ -251,10 +250,10 @@ session_start();
 
       <h3>Contact Us</h3>
 
-      <p>☎ 07055165234</p>
+      <p>☎ 07055176125</p>
 
       <p>
-        📍 Opposite Nancy Road,
+        📍 Opposite Shopp Moore,
         Auchi Edo State, Nigeria
       </p>
 
@@ -340,20 +339,6 @@ session_start();
   </div>
 
 </body>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

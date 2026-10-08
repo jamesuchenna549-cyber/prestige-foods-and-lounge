@@ -1,42 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
     <title>Admin Dashboard</title>
-    <link rel="stylesheet" href="admin.css">
+
+ <link rel="stylesheet"
+        href="admin.css">
+
 </head>
+
+
 <body>
 
-    <div class="admin-dashboard">
-        <h1>Admin Dashboard</h1>
+
+<div class="admin-layout">
 
 
-<p class="admin-welcome"></p>
+    <!-- =========================
+         ADMIN SIDEBAR
+    ========================== -->
 
-       <div class="dashboard-menu">
-    <button class="products-button">Products</button>
-    <button class="orders-button">Orders</button>
-    <button class="customers-button">Customers</button>
+    <aside class="admin-sidebar">
+
+
+        <div class="admin-brand">
+
+            <h2>Prestige</h2>
+
+            <p>Restaurant & Lounge</p>
+
+        </div>
+
+
+        <nav class="admin-nav">
+
+
+            <a
+                href="dashboard.html"
+                class="active"
+            >
+                Dashboard
+            </a>
+
+
+            <a href="products.html">
+                Products
+            </a>
+
+
+            <a href="orders.html">
+                Orders
+            </a>
+
+
+            <a href="customers.html">
+                Customers
+            </a>
+
+
+            <!-- Snooker section -->
+
+            <a href="#">
+                Snooker
+            </a>
+
+
+        </nav>
+
+
+       
+        <button class="logout-button">
+            Logout
+        </button>
+
+
+    </aside>
+
+
+
+    <!-- =========================
+         MAIN CONTENT
+    ========================== -->
+
+    <main class="admin-main">
+
+
+        <header class="admin-header">
+
+
+            <div>
+
+                <h1>
+                    Admin Dashboard
+                </h1>
+
+
+               
+
+        <section class="dashboard-menu">
+
+
+            <button class="products-button">
+
+                <span>
+                    Products
+                </span>
+
+                <small>
+                    Manage restaurant products
+                </small>
+
+            </button>
+
+
+
+            <button class="orders-button">
+
+                <span>
+                    Orders
+                </span>
+
+                <small>
+                    View and manage orders
+                </small>
+
+            </button>
+
+
+
+            <button class="customers-button">
+
+                <span>
+                    Customers
+                </span>
+
+                <small>
+                    View registered customers
+                </small>
+
+            </button>
+
+
+            
+
+            <button class="snooker-button">
+
+                <span>
+        Snooker Management
+                </span>
+
+                <small>
+ Competitions, registrations & champions
+                </small>
+
+            </button>
+
+
+        </section>
+
+
+
+    </main>
+
+
 </div>
-        <button class="logout-button">Logout</button>
-    </div>
 
 
 
-<script src="dashboard.js?v=2"></script>
-
+<script src="dashboard.js?v=3"></script>
 
 
 </body>
+
 </html>
-
-
-
-
-
-
-
-
-
-

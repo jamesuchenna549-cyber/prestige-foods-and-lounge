@@ -1,0 +1,420 @@
+/* ========================================
+   MY REGISTRATIONS 
+======================================== */
+
+
+.my-registrations-container {
+
+    width: 100%;
+
+    min-height: 100vh;
+
+    padding: 30px 15px 60px;
+
+}
+
+
+/* PAGE HEADING */
+
+.page-heading {
+
+    width: 100%;
+
+    margin-bottom: 35px;
+
+}
+
+
+.page-heading h1 {
+
+    font-size: 2rem;
+
+    color: #f5f1e8;
+
+    margin-bottom: 10px;
+
+}
+
+
+.page-heading p {
+
+    color: #999;
+
+    font-size: 0.95rem;
+
+}
+
+
+
+/* REGISTRATION LIST */
+
+.registration-list {
+
+    width: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 20px;
+
+}
+
+
+
+/* CARD */
+
+.my-registration-card {
+
+    width: 100%;
+
+    background: #151a17;
+
+    border-radius: 14px;
+
+    padding: 25px 20px;
+
+    border: 1px solid rgba(201,164,76,0.25);
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,0.35);
+
+}
+
+
+
+/* HEADER */
+
+.registration-card-header {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+
+    margin-bottom: 25px;
+
+}
+
+
+.card-label {
+
+    color:#c9a44c;
+
+    font-size:0.7rem;
+
+    letter-spacing:2px;
+
+    font-weight:bold;
+
+}
+
+
+.registration-card-header h2 {
+
+    color:#f5f1e8;
+
+    font-size:1.3rem;
+
+}
+
+
+
+/* PAYMENT BADGE */
+
+.payment-badge {
+
+    width:max-content;
+
+    padding:6px 12px;
+
+    border-radius:20px;
+
+    font-size:0.7rem;
+
+    font-weight:bold;
+
+}
+
+
+
+.payment-badge.paid {
+
+    color:#6fd49a;
+
+    background:rgba(44,130,85,0.2);
+
+}
+
+
+.payment-badge.unpaid {
+
+    color:#d4b15f;
+
+    background:rgba(201,164,76,0.15);
+
+}
+
+
+
+/* DETAILS */
+
+.my-registration-details {
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+    padding:20px 0;
+
+    border-top:1px solid rgba(255,255,255,0.08);
+
+    border-bottom:1px solid rgba(255,255,255,0.08);
+
+}
+
+
+.my-detail {
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:5px;
+
+}
+
+
+.my-detail span {
+
+    color:#777;
+
+    font-size:0.7rem;
+
+    letter-spacing:1px;
+
+}
+
+
+.my-detail strong {
+
+    color:#eee;
+
+    font-size:1rem;
+
+}
+
+
+.gold-text {
+
+    color:#d4b15f !important;
+
+}
+
+
+
+/* PAY BUTTON */
+
+.registration-action {
+
+    margin-top:25px;
+
+}
+
+
+.snooker-button {
+
+    width:100%;
+
+    padding:15px;
+
+    background:#c9a44c;
+
+    color:#111;
+
+    border:none;
+
+    border-radius:8px;
+
+    font-weight:bold;
+
+    font-size:1rem;
+
+}
+
+
+
+/* EMPTY STATE */
+
+.empty-registrations {
+
+    width:100%;
+
+    min-height:50vh;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+}
+
+
+.empty-registrations h2 {
+
+    color:#d4b15f;
+
+}
+
+
+.empty-registrations p {
+
+    color:#999;
+
+}
+
+
+
+/* ========================================
+   TABLET VIEW
+======================================== */
+
+@media (min-width: 768px) {
+
+
+.my-registrations-container {
+
+    padding: 60px 40px 90px;
+
+}
+
+
+.registration-list {
+
+    display:grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap:30px;
+
+}
+
+
+.my-registration-card {
+
+    padding:35px;
+
+    border:1px solid rgba(201,164,76,0.25);
+
+    border-radius:12px;
+
+}
+
+
+.my-registration-details {
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+
+}
+/* ========================================
+   DESKTOP VIEW
+======================================== */
+
+@media (min-width:1200px) {
+
+
+.my-registrations-container {
+
+    padding:80px 70px 120px;
+
+}
+
+
+.registration-list {
+
+    grid-template-columns:repeat(3,1fr);
+
+}
+
+
+.my-registration-card {
+
+    padding:40px;
+
+}
+
+
+.page-heading h1 {
+
+
+    font-size:3.5rem;
+
+}
+
+
+}
+
+.rules-button {
+
+    display:block;
+
+    width:100%;
+
+    padding:15px;
+
+    margin-top:15px;
+
+    text-align:center;
+
+    background:transparent;
+
+    color:#c9a44c;
+
+    border:1px solid #c9a44c;
+
+    border-radius:8px;
+
+    text-decoration:none;
+
+    font-weight:bold;
+
+    transition:0.3s;
+
+}
+
+
+.rules-button:hover {
+
+    background:#c9a44c;
+
+    color:#111;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

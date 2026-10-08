@@ -35,16 +35,18 @@ addProductForm.addEventListener('submit', async function(event) {
     const description = addProductForm.querySelector('textarea[name="description"]').value.trim();
     const price = addProductForm.querySelector('input[name="price"]').value;
     const category = addProductForm.querySelector('input[name="category"]').value.trim();
-    const image = addProductForm.querySelector('input[name="image"]').value.trim();
+    const imageInput = addProductForm.querySelector('input[name="image"]');
 
-    const formData = new FormData();
+const formData = new FormData();
 
-    formData.append('name', name);
-    formData.append('description', description);
-    formData.append('price', price);
-    formData.append('category', category);
-    formData.append('image', image);
+formData.append('name', name);
+formData.append('description', description);
+formData.append('price', price);
+formData.append('category', category);
 
+if (imageInput.files.length > 0) {
+    formData.append('image', imageInput.files[0]);
+}
     try {
         const url = editingProductId
             ? '../backend/edit_product.php'
@@ -100,18 +102,17 @@ async function getProducts() {
 
         products.forEach(function(product) {
             html += `
-                <div class="admin-product">
-                    <img src="${product.image}" alt="${product.name}">
+ <div class="admin-product">
+        <img src="../${product.image}" alt="${product.name}">
+ <h2>${product.name}</h2>
 
-                    <h2>${product.name}</h2>
+   <p>
+  Price: ₦${Number(product.price).toLocaleString()}
+       </p>
 
-                    <p>
-                        Price: ₦${Number(product.price).toLocaleString()}
-                    </p>
-
-                    <p>
-                        Category: ${product.category}
-                    </p>
+     <p>
+  Category: ${product.category}
+    </p>
 
                     <div class="product-actions">
                         <button class="edit-product" data-id="${product.id}">
@@ -165,12 +166,12 @@ productsContainer.addEventListener('click', function(event) {
     addProductForm.querySelector('textarea[name="description"]').value = product.description;
     addProductForm.querySelector('input[name="price"]').value = product.price;
     addProductForm.querySelector('input[name="category"]').value = product.category;
-    addProductForm.querySelector('input[name="image"]').value = product.image;
+    
 
-    addProductForm.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start'
-    });
+    window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+});
 });
 
 

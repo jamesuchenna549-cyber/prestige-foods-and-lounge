@@ -8,6 +8,10 @@ backend/db_connection.php
 
 # Local secret configuration
 backend/config.php
+backend/errors.log
+
+# Uploaded files
+uploads/
 
 # Logs
 *.log

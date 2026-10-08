@@ -10,14 +10,27 @@ function sendErrorResponse($message, $statusCode = 500)
 {
     http_response_code($statusCode);
 
-    echo json_encode([
-        "success" => false,
-        "message" => $message
-    ]);
+    $isApi = isset($_SERVER["HTTP_ACCEPT"]) 
+        && strpos($_SERVER["HTTP_ACCEPT"], "application/json") !== false;
+
+    if ($isApi) {
+
+        header("Content-Type: application/json");
+
+        echo json_encode([
+            "success" => false,
+            "message" => $message
+        ]);
+
+    } else {
+
+        echo "Something went wrong.";
+        echo "Please try again later.";
+
+    }
 
     exit;
 }
-
 
 // Log errors privately
 function logError($error)

@@ -1,0 +1,199 @@
+/* ========================================
+   HALL OF CHAMPIONS CARDS
+======================================== */
+
+
+.champions-list {
+
+    display:grid;
+
+    grid-template-columns:1fr;
+
+    gap:30px;
+
+}
+
+
+
+
+.champion-card {
+
+    background:#151a17;
+
+    border:1px solid rgba(201,164,76,0.35);
+
+    border-radius:15px;
+
+    overflow:hidden;
+
+    transition:0.3s;
+
+}
+
+
+
+.champion-card:hover {
+
+    transform:translateY(-6px);
+
+    border-color:#c9a44c;
+
+    box-shadow:
+    0 15px 35px rgba(0,0,0,0.4);
+
+}
+
+
+
+/* IMAGE */
+
+
+.champion-image {
+
+    width:100%;
+
+    height:300px;
+
+    background:#101412;
+
+}
+
+
+
+.champion-image img {
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+}
+
+
+
+
+
+/* CONTENT */
+
+
+.champion-info {
+
+    padding:25px;
+
+}
+
+
+
+.champion-badge {
+
+    display:inline-block;
+
+    background:rgba(201,164,76,0.15);
+
+    color:#d4b15f;
+
+    padding:6px 12px;
+
+    border-radius:20px;
+
+    font-size:0.75rem;
+
+    font-weight:bold;
+
+    letter-spacing:1px;
+
+    margin-bottom:15px;
+
+}
+
+
+
+.champion-info h2 {
+
+    color:#f5f1e8;
+
+    font-size:1.6rem;
+
+    margin-bottom:25px;
+
+}
+
+
+
+
+
+.champion-details {
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:15px;
+
+}
+
+
+
+.champion-details p {
+
+    color:#ddd;
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+
+
+.champion-details span {
+
+    color:#888;
+
+    font-size:0.75rem;
+
+    text-transform:uppercase;
+
+    letter-spacing:2px;
+
+    margin-bottom:5px;
+
+}
+
+
+
+
+
+@media(min-width:700px){
+
+
+.champions-list {
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+
+.champion-image {
+
+    height:320px;
+
+}
+
+
+}
+
+
+
+@media(min-width:1200px){
+
+
+.champions-list {
+
+    grid-template-columns:repeat(3,1fr);
+
+}
+
+
+}
